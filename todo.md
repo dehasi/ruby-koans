@@ -21,3 +21,24 @@ end
     # rather than used as a literal?
   end
 ```
+
+```ruby
+  def test_method_names_become_symbols
+    symbols_as_strings = Symbol.all_symbols.map { |x| x.to_s }
+    assert_equal true, symbols_as_strings.include?("test_method_names_become_symbols")
+    assert_equal true, Symbol.all_symbols.include?(:test_method_names_become_symbols)
+  end
+
+  # THINK ABOUT IT:
+  #
+  # Why do we convert the list of symbols to strings and then compare
+  # against the string value rather than against symbols?
+
+  # It's important to realize that symbols are not "immutable
+  # strings", though they are immutable. None of the
+  # interesting string operations are available on symbols.
+
+  # THINK ABOUT IT:
+  #
+  # Why is it not a good idea to dynamically create a lot of symbols?
+```
