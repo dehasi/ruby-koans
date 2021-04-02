@@ -9,3 +9,15 @@ def test_slicing_arrays
 end
 ```
 
+```ruby
+  def test_changing_hashes
+    hash = { :one => "uno", :two => "dos" }
+    hash[:one] = "eins"
+
+    expected = { :one => "eins", :two => "dos" }
+    assert_equal expected, hash
+
+    # Bonus Question: Why was "expected" broken out into a variable
+    # rather than used as a literal?
+  end
+```
