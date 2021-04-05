@@ -116,7 +116,7 @@ class AboutIteration < Neo::Koan
   #
   #   file = File.open(filename)
   #   # code to read 'file'
-  #
+  # Because we have to close the file
   # When you get to the "AboutSandwichCode" koan, recheck your answer.
 
 end
