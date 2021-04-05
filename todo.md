@@ -63,3 +63,9 @@ https://stackoverflow.com/questions/13661193/ruby-scopes-constants-precedence-le
   # Which do you prefer and why?
   # Are there times you might prefer one over the other?
 ```
+
+```ruby
+    # THINK ABOUT IT:
+    #
+    # Why does Ruby provide both send and __send__ ?
+```
