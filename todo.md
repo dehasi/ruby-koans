@@ -42,3 +42,24 @@ end
   #
   # Why is it not a good idea to dynamically create a lot of symbols?
 ```
+
+https://stackoverflow.com/questions/13661193/ruby-scopes-constants-precedence-lexical-scope-or-inheritance-tree
+
+
+```ruby
+  # THINK ABOUT IT:
+  #
+  # The two major ways to write class methods are:
+  #   class Demo
+  #     def self.method
+  #     end
+  #
+  #     class << self
+  #       def class_methods
+  #       end
+  #     end
+  #   end
+  #
+  # Which do you prefer and why?
+  # Are there times you might prefer one over the other?
+```
